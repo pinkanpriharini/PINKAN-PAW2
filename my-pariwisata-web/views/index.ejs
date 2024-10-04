@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<%- include('master', 
+
+{ title: title, body: `
+<h1>Selamat datang di website pariwisata
+  palembang</h1>
+<p>
+  ini adalah halaman official pariwisata palembang. anda dapat memesan paket wisata pada website ini. selamat
+  menikmati keindahan wisata palembang
+</p>
+`
+})
+%>
